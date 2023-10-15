@@ -16,6 +16,14 @@ All such functionality can be enabled within a standard NGINX configuration beca
 
 If the predefined configuration does not meet your needs, it is best to borrow from the patterns in this project and build your own configuration. For example, if you want to enable SSL/TLS and compression in your NGINX S3 gateway configuration, you will need to look at other documentation because this project does not enable those features of NGINX.
 
-
-
 Source https://github.com/nginxinc/nginx-s3-gateway
+
+## Usage
+
+The application is available as a Docker image from [Docker Hub](https://hub.docker.com/r/chocolatefrappe/nginx-s3-gateway).
+
+```sh
+docker run --rm -it -p 8080:80 chocolatefrappe/nginx-s3-gateway
+```
+
+See [Configuration](https://github.com/nginxinc/nginx-s3-gateway/blob/master/docs/getting_started.md#configuration) for customizing the container.
